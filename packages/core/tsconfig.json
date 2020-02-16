@@ -5,5 +5,13 @@
 		"rootDir": "./src",
 		"baseUrl": "."
 	},
-	"exclude": ["dist", "test", "jest.config.js"]
+	"typedocOptions": {
+		"mode": "modules",
+		"out": "docs"
+	},
+	"exclude": [
+		"dist",
+		"test",
+		"jest.config.js"
+	]
 }

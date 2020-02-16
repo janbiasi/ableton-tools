@@ -5,6 +5,10 @@
 		"rootDir": "./src",
 		"baseUrl": "."
 	},
+	"typedocOptions": {
+		"mode": "modules",
+		"out": "docs"
+	},
 	"exclude": [
 		"dist",
 		"test",

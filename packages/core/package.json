@@ -1,39 +1,50 @@
 {
-	"name": "@ableton-tools/core",
-	"version": "1.0.0",
-	"description": "An Ableton toolset package containing the core",
-	"main": "./dist/index.js",
-	"types": "./dist/index.d.ts",
-	"files": ["dist"],
-	"scripts": {
-		"test": "jest",
-		"build": "tsc --project ./tsconfig.json",
-		"prepublishOnly": "npm run build"
-	},
-	"dependencies": {
-		"archiver": "3.1.1",
-		"globby": "11.0.0",
-		"unzipper": "0.10.8"
-	},
-	"devDependencies": {
-		"@types/archiver": "3.0.0",
-		"@types/globby": "9.1.0",
-		"@types/jest": "22.2.3",
-		"@types/node": "13.7.1",
-		"@types/unzipper": "0.10.1",
-		"jest": "25.1.0",
-		"ts-jest": "25.2.0",
-		"typescript": "3.7.5"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/janbiasi/ableton-tools.git"
-	},
-	"keywords": ["ableton", "tools", "ableton", "tools", "m4l", "cycling74"],
-	"author": "Jan Biasi <biasijan@gmail.com>",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/janbiasi/ableton-tools/issues"
-	},
-	"homepage": "https://github.com/janbiasi/ableton-tools#readme"
+  "name": "@ableton-tools/core",
+  "version": "1.0.0",
+  "description": "An Ableton toolset package containing the core",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "jest",
+    "build": "tsc --project ./tsconfig.json",
+    "prepublishOnly": "npm run build",
+    "docs": "typedoc"
+  },
+  "dependencies": {
+    "archiver": "3.1.1",
+    "globby": "11.0.0",
+    "typedoc": "^0.16.10",
+    "unzipper": "0.10.8"
+  },
+  "devDependencies": {
+    "@types/archiver": "3.0.0",
+    "@types/globby": "9.1.0",
+    "@types/jest": "22.2.3",
+    "@types/node": "13.7.1",
+    "@types/unzipper": "0.10.1",
+    "jest": "25.1.0",
+    "ts-jest": "25.2.0",
+    "typescript": "3.7.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janbiasi/ableton-tools.git"
+  },
+  "keywords": [
+    "ableton",
+    "tools",
+    "ableton",
+    "tools",
+    "m4l",
+    "cycling74"
+  ],
+  "author": "Jan Biasi <biasijan@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/janbiasi/ableton-tools/issues"
+  },
+  "homepage": "https://github.com/janbiasi/ableton-tools#readme"
 }
