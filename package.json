@@ -9,8 +9,10 @@
     "bootstrap": "npx lerna bootstrap --hoist",
     "prettier": "prettier --write \"**/*.*(js|jsx|ts|tsx|json|md)\"",
     "docs": "typedoc --plugin typedoc-plugin-markdown",
-    "test": "lerna run test",
-    "build": "lerna run build"
+    "test": "lerna run test --stream",
+    "build": "lerna run build --stream",
+    "publish": "lerna publish --yes",
+    "canary": "lerna publish --canary --preid beta --yes"
   },
   "repository": {
     "type": "git",
