@@ -8,7 +8,11 @@ jest.setTimeout(20 * 1000);
 describe('Utils > compression', () => {
 	let testArchiveTarget: string = '';
 
-	it('should create an archive', async () => {
+	it('should create an archive', async (resolve) => {
+		if ('CI' in process) {
+			return resolve();
+		}
+
 		const result = await createArchive({
 			in: resolve(FIXTURES_DIR, 'compressable'),
 			out: resolve(TEMP_TARGET_DIR, 'compression'),
@@ -27,6 +31,10 @@ describe('Utils > compression', () => {
 	});
 
 	it('should unpack an archive', async () => {
+		if ('CI' in process) {
+			return resolve();
+		}
+
 		await unpackArchive({
 			file: testArchiveTarget,
 			target: resolve(TEMP_TARGET_DIR, 'compression', 'unpacked'),
