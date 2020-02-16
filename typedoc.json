@@ -1,0 +1,11 @@
+{
+	"name": "Ableton Tools",
+	"mode": "modules",
+	"out": "doc",
+	"theme": "default",
+	"ignoreCompilerErrors": "false",
+	"preserveConstEnums": "true",
+	"exclude": "*.spec.ts",
+	"external-modulemap": ".*packages\/(@ableton-tools\/[^\/]+)\/.*",
+	"stripInternal": "false"
+}

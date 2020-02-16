@@ -9,7 +9,8 @@
     "postinstall": "lerna bootstrap",
     "bootstrap": "npx lerna bootstrap --hoist",
     "test": "lerna run test",
-    "prettier": "prettier --write \"**/*.*(js|jsx|ts|tsx|json|md)\""
+    "prettier": "prettier --write \"**/*.*(js|jsx|ts|tsx|json|md)\"",
+    "docs": "typedoc --plugin typedoc-plugin-markdown"
   },
   "repository": {
     "type": "git",
@@ -36,6 +37,8 @@
     "cz-conventional-changelog": "3.1.0",
     "lerna": "3.20.2",
     "prettier": "1.19.1",
+    "typedoc": "0.16.10",
+    "typedoc-plugin-markdown": "2.2.16",
     "typescript": "3.7.5"
   },
   "dependencies": {

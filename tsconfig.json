@@ -9,6 +9,13 @@
 		"esModuleInterop": true,
 		"allowSyntheticDefaultImports": true,
 		"declaration": true,
-		"lib": ["ES6", "ES7"]
+		"lib": [
+			"ES6",
+			"ES7"
+		]
+	},
+	"typedocOptions": {
+		"mode": "modules",
+		"out": "docs"
 	}
 }
