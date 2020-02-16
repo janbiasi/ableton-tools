@@ -1,0 +1,49 @@
+{
+  "name": "ableton-tools",
+  "private": true,
+  "version": "1.0.0",
+  "description": "An Ableton toolset package",
+  "main": "index.js",
+  "scripts": {
+    "cz": "git-cz",
+    "postinstall": "lerna bootstrap",
+    "bootstrap": "npx lerna bootstrap --hoist",
+    "test": "lerna run test",
+    "prettier": "prettier --write \"**/*.*(js|jsx|ts|tsx|json|md)\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janbiasi/ableton-tools.git"
+  },
+  "keywords": [
+    "ableton",
+    "cli",
+    "tools",
+    "ableton",
+    "tools",
+    "m4l",
+    "cycling74"
+  ],
+  "author": "Jan Biasi <biasijan@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/janbiasi/ableton-tools/issues"
+  },
+  "homepage": "https://github.com/janbiasi/ableton-tools#readme",
+  "devDependencies": {
+    "@types/fs-extra": "8.0.1",
+    "@types/node": "13.7.1",
+    "cz-conventional-changelog": "3.1.0",
+    "lerna": "3.20.2",
+    "prettier": "1.19.1",
+    "typescript": "3.7.5"
+  },
+  "dependencies": {
+    "fs-extra": "8.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

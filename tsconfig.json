@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"strict": true,
+		"target": "ES5",
+		"module": "CommonJS",
+		"moduleResolution": "node",
+		"sourceMap": true,
+		"allowJs": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"declaration": true,
+		"lib": ["ES6", "ES7"]
+	}
+}
