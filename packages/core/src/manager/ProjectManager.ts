@@ -83,7 +83,7 @@ export class ProjectManager extends Manager {
 		return result;
 	}
 
-	public async backup(projectOrId: string | IDatabaseEntry<IProjectSchema>) {
+	public async backup(projectOrId: string | IDatabaseEntry<IProjectSchema>, description = '') {
 		const projectId = typeof projectOrId === 'string' ? projectOrId : projectOrId.id;
 		const project = this.getById(projectId);
 
@@ -106,6 +106,7 @@ export class ProjectManager extends Manager {
 		});
 
 		await this.backups.save({
+			description,
 			ref: project.id,
 			name: `${project.data.name} v${targetVersion}`,
 			version: targetVersion,

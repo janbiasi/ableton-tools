@@ -137,23 +137,4 @@ describe('Core > Manager > ProjectManager', () => {
 			expect(foundProject!.data!.sets![0]).toEqual('/some/project/path/MySet.als');
 		});
 	});
-
-	describe('real life scenarios', () => {
-		beforeEach(() => {
-			jest.clearAllMocks();
-			jest.resetAllMocks();
-		});
-
-		it.skip('should work in real life', async () => {
-			const root = resolve(TEMP_TARGET_DIR, 'pm-rls');
-			const pm = new ProjectManager(root);
-			await pm.init();
-			await pm.save({
-				name: 'Example Project',
-				path: resolve(FIXTURES_DIR, 'Example Project'),
-			});
-
-			const foundProject = pm.getByName('Example Project');
-		});
-	});
 });
