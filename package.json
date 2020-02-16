@@ -11,8 +11,8 @@
     "docs": "typedoc --plugin typedoc-plugin-markdown",
     "test": "lerna run test --stream",
     "build": "lerna run build --stream",
-    "publish": "lerna publish --yes",
-    "canary": "lerna publish --canary --preid beta --yes"
+    "publish": "lerna publish --conventional-commits --yes",
+    "canary": "lerna publish --conventional-commits --canary --preid beta --yes"
   },
   "repository": {
     "type": "git",
