@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Core > Database (RLS) should work correctly 1`] = `
+Object {
+  "entries": Array [],
+  "name": "RLS Test Case",
+  "size": 0,
+}
+`;
+
+exports[`Core > Database (RLS) should work correctly 2`] = `
+Object {
+  "entries": Array [
+    Object {
+      "data": Object {
+        "value": "Hello world!",
+      },
+      "id": "entry-id",
+      "timestamp": 0,
+    },
+  ],
+  "name": "RLS Test Case",
+  "size": 1,
+}
+`;
+
+exports[`Core > Database (RLS) should work correctly 3`] = `
+Object {
+  "entries": Array [],
+  "name": "RLS Test Case",
+  "size": 0,
+}
+`;

@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Core > Manager > ProjectManager should be instanciable without options 1`] = `
+Object {
+  "backups": Database {
+    "config": Object {
+      "fileName": "backups",
+      "name": "backups",
+      "root": ".",
+    },
+    "contents": Object {
+      "entries": Array [],
+      "name": "unknown",
+    },
+  },
+  "events": EventEmitter {
+    "_events": Object {},
+    "_eventsCount": 0,
+    "_maxListeners": undefined,
+  },
+  "name": "projects",
+  "prepared": false,
+  "registry": Database {
+    "config": Object {
+      "fileName": "registry",
+      "name": "projects",
+      "root": ".",
+    },
+    "contents": Object {
+      "entries": Array [],
+      "name": "unknown",
+    },
+  },
+  "root": "root://",
+}
+`;

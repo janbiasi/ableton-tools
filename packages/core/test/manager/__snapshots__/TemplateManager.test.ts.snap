@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Core > Manager > TemplateManager should be instanciable without options 1`] = `
+Object {
+  "database": Database {
+    "config": Object {
+      "fileName": "database",
+      "name": "templates",
+      "root": ".",
+    },
+    "contents": Object {
+      "entries": Array [],
+      "name": "unknown",
+    },
+  },
+  "events": EventEmitter {
+    "_events": Object {},
+    "_eventsCount": 0,
+    "_maxListeners": undefined,
+  },
+  "name": "templates",
+  "prepared": false,
+  "root": "root://",
+}
+`;
