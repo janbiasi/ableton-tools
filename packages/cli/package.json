@@ -1,0 +1,51 @@
+{
+  "name": "@ableton-tools/cli",
+  "version": "1.0.0",
+  "description": "An Ableton toolset package containing the command line interface (cli)",
+  "main": "index.js",
+  "bin": {
+    "ableton-tools": "./dist/index.js"
+  },
+  "scripts": {
+    "test": "exit 0",
+    "build": "tsc --project ./tsconfig.json",
+    "cli": "ts-node ./src/index.ts"
+  },
+  "dependencies": {
+    "@ableton-tools/core": "*",
+    "boxen": "4.2.0",
+    "commander": "4.1.1",
+    "chalk": "3.0.0",
+    "log-symbols": "3.0.0",
+    "ora": "4.0.3",
+    "update-notifier": "4.1.0"
+  },
+  "devDependencies": {
+    "@types/jest": "22.2.3",
+    "@types/node": "13.7.1",
+    "@types/update-notifier": "2.5.0",
+    "jest": "25.1.0",
+    "ts-jest": "25.2.0",
+    "ts-node": "8.6.2",
+    "typescript": "3.7.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janbiasi/ableton-tools.git"
+  },
+  "keywords": [
+    "ableton",
+    "cli",
+    "tools",
+    "ableton",
+    "tools",
+    "m4l",
+    "cycling74"
+  ],
+  "author": "Jan Biasi <biasijan@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/janbiasi/ableton-tools/issues"
+  },
+  "homepage": "https://github.com/janbiasi/ableton-tools#readme"
+}
