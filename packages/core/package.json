@@ -8,7 +8,7 @@
     "dist"
   ],
   "scripts": {
-    "test": "jest",
+    "test": "jest --runInBand",
     "build": "tsc --project ./tsconfig.json",
     "prepublishOnly": "npm run build"
   },
