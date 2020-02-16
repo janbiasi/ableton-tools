@@ -11,12 +11,11 @@
     "test": "jest",
     "build": "tsc --project ./tsconfig.json",
     "prepublishOnly": "npm run build",
-    "docs": "typedoc"
+    "docs": "typedoc --plugin typedoc-plugin-markdown"
   },
   "dependencies": {
     "archiver": "3.1.1",
     "globby": "11.0.0",
-    "typedoc": "^0.16.10",
     "unzipper": "0.10.8"
   },
   "devDependencies": {
@@ -27,6 +26,8 @@
     "@types/unzipper": "0.10.1",
     "jest": "25.1.0",
     "ts-jest": "25.2.0",
+    "typedoc": "0.16.10",
+    "typedoc-plugin-markdown": "2.2.16",
     "typescript": "3.7.5"
   },
   "repository": {
