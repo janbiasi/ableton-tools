@@ -41,16 +41,25 @@ export class ProjectManager extends Manager {
 		await mkdirp(this.backupsPath);
 	}
 
+	/**
+	 * @internal
+	 */
 	public async syncToDatabase() {
 		await this.registry.syncToDatabase();
 		await this.backups.syncToDatabase();
 	}
 
+	/**
+	 * @internal
+	 */
 	public async syncFromDatabase() {
 		await this.registry.syncFromDatabase();
 		await this.backups.syncFromDatabase();
 	}
 
+	/**
+	 * @internal
+	 */
 	public async reset() {
 		await this.registry.reset();
 		await this.backups.reset();
@@ -61,6 +70,7 @@ export class ProjectManager extends Manager {
 		const projectInfoFile = resolve(project.path, PROJECT_MANAGER_META_FILE);
 		const result = await this.registry.save({
 			...project,
+			path: resolve(project.path),
 			sets: containingLiveSets,
 		});
 

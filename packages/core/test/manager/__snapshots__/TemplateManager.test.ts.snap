@@ -13,11 +13,7 @@ Object {
       "name": "unknown",
     },
   },
-  "events": EventEmitter {
-    "_events": Object {},
-    "_eventsCount": 0,
-    "_maxListeners": undefined,
-  },
+  "events": Object {},
   "name": "templates",
   "prepared": false,
   "root": "root://",

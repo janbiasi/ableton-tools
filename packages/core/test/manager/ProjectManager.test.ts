@@ -1,15 +1,13 @@
-import { resolve } from 'path';
 import { mocked } from 'ts-jest/utils';
-import { IProjectSchema } from '../../src/schema/Project';
 import { ProjectManager } from '../../src/manager';
-import { TEMP_TARGET_DIR, FIXTURES_DIR } from '../const';
 import { toSnapshot } from './toSnapshot';
+import { ITestProjectManager } from './TestManager';
 
 jest.mock('fs-extra');
+import * as fs from 'fs-extra';
+
 jest.mock('globby');
 import globby from 'globby';
-import * as fs from 'fs-extra';
-import { ITestProjectManager } from './TestManager';
 
 const fsMock = mocked(fs);
 
