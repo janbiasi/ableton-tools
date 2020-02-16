@@ -73,4 +73,19 @@ describe('Core > Manager > Project Manager (RLS)', () => {
 
 		expect(res).toBeTruthy();
 	});
+
+	it('should backup projects with description correctly', async () => {
+		const project = await pm.save({
+			name: 'Example Project',
+			path: fixtureProjectPath,
+		});
+
+		// should be ablet to backup a project
+		const res = await pm.backup(project.id, 'Some backup description');
+
+		const foundBackups = pm.getBackupsByRef(project.id);
+		expect(res).toBeTruthy();
+		expect(foundBackups.backups).toHaveLength(1);
+		expect(foundBackups.backups[0].data.description).toEqual('Some backup description');
+	});
 });

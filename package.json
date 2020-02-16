@@ -6,11 +6,13 @@
   "main": "index.js",
   "scripts": {
     "cz": "git-cz",
-    "postinstall": "lerna bootstrap",
     "bootstrap": "npx lerna bootstrap --hoist",
-    "test": "lerna run test",
     "prettier": "prettier --write \"**/*.*(js|jsx|ts|tsx|json|md)\"",
-    "docs": "typedoc --plugin typedoc-plugin-markdown"
+    "docs": "typedoc --plugin typedoc-plugin-markdown",
+    "test": "lerna run test --stream",
+    "build": "lerna run build --stream",
+    "publish": "lerna publish --yes",
+    "canary": "lerna publish --canary --preid beta --yes"
   },
   "repository": {
     "type": "git",

@@ -8,6 +8,7 @@ export interface IProjectSchema {
 
 export interface IProjectBackupSchema {
 	name: string;
+	description: string;
 	ref: string; // reference to the project ID
 	version: number;
 	path: string;

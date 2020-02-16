@@ -50,7 +50,7 @@ describe('Core > Manager > TemplateManager', () => {
 			expect(fsMock.readFile).toHaveBeenCalledTimes(0);
 			expect(fsMock.writeFile).toHaveBeenCalledTimes(1);
 			expect(fsMock.writeFile).toHaveBeenLastCalledWith(
-				'/test/database.json',
+				'/test/templates.json',
 				JSON.stringify({ name: 'templates', entries: [] }, null, 2)
 			);
 		});
@@ -80,7 +80,7 @@ describe('Core > Manager > TemplateManager', () => {
 			await tm.init();
 
 			expect(fsMock.readFile).toHaveBeenCalledTimes(1);
-			expect(fsMock.readFile).toHaveBeenLastCalledWith('/test/database.json', 'utf8');
+			expect(fsMock.readFile).toHaveBeenLastCalledWith('/test/templates.json', 'utf8');
 			expect(tmdb.contents.entries).toHaveLength(1);
 			expect(tmdb.contents.entries[0]!.data.name).toEqual('test-template');
 		});

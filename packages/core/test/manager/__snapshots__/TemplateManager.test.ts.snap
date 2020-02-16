@@ -4,7 +4,7 @@ exports[`Core > Manager > TemplateManager should be instanciable without options
 Object {
   "database": Database {
     "config": Object {
-      "fileName": "database",
+      "fileName": "templates",
       "name": "templates",
       "root": ".",
     },
